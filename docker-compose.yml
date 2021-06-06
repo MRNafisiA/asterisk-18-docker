@@ -5,15 +5,15 @@ services:
     image: asterisk:18.04
     volumes:
       - ./asterisk-config:/etc/asterisk
-#      - ./asterisk-modules:/usr/lib/asterisk/modules
-#      - ./asterisk-libs:/var/lib/asterisk
-#      - ./asterisk-agi:/var/lib/asterisk/agi-bin
-#      - ./asterisk-spool:/var/spool/asterisk
-#      - ./asterisk-logs:/var/log/asterisk
+    #      - ./asterisk-modules:/usr/lib/asterisk/modules
+    #      - ./asterisk-libs:/var/lib/asterisk
+    #      - ./asterisk-agi:/var/lib/asterisk/agi-bin
+    #      - ./asterisk-spool:/var/spool/asterisk
+    #      - ./asterisk-logs:/var/log/asterisk
     ports:
       - 2000:2000/tcp
       - 2727:2727/udp
       - 5000:5000/udp
-      - 43927:43927/udp
       - 5060:5060/udp
       - 4569:4569/udp
+      - 10000-20000:10000-20000/udp
